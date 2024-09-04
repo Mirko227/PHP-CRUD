@@ -4,7 +4,7 @@ I developed a CRUD (Create, Read, Update, Delete) web app that allows performing
 
 ![php-crud](https://github.com/user-attachments/assets/78569cc5-880d-4e1e-a18b-bc4d70e67804)
 
-# To set up the project:\
+# To set up the project:
 
 **Import the database:** Load the database file into your XAMPP environment using phpMyAdmin.
 **Place the project:** Move the project folder into the `Xampp/htdocs` directory of Xampp.
