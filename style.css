@@ -1,0 +1,14 @@
+.new-user-container { 
+    max-width: 700px;
+    width: 90%;
+    margin-top: clamp(60px,18.75vw,150px);
+}
+
+.searchbar{
+    width: clamp(13.75rem,13vw,15.625rem);
+}
+
+.add-user{
+    max-width: fit-content;
+}
+

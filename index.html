@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>PHP CRUD</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"></href>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="modal-deleteLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal-deleteLabel">Attenzione!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Eliminare il record selezionato?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annulla</button>
+                  <button type="button" class="btn btn-primary btn-danger" id="modal-delete-btn" data-bs-dismiss="modal">Elimina</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modal-update" tabindex="-1" aria-labelledby="modal-updateLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal-updateLabel">Modifica dati utente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <form id="update-user" autocomplete="off" method="POST" action="">
+                    <div class="modal-body">
+                
+                        <div class="row gy-3">
+              
+                            <div class="col-12">
+                                <label class="form-label" for="Nome">Nome</label>
+                                <input class="form-control" type="text" name="Nome" id="Nome" value="" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="Cognome" >Cognome</label>
+                                <input class="form-control" type="text" name="Cognome" id="Cognome" value="" required>
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="Email">Email</label>
+                                <input class="form-control" type="email" name="Email" id="Email" value="" required>
+                            </div>  
+
+                        </div>
+
+                    </div>
+              
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="submit" class="btn btn-primary" id="modal-update-btn">Invia</button>
+                      </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+
+    <div class="table-container container-md my-5" id="table-container">
+        <nav>
+          <h1 class="text-center display-2 mb-5 fw-normal position">PHP CRUD Application</h1>
+        </nav>
+
+        <div class="div d-flex flex-column flex-sm-row justify-content-sm-between gap-4 mb-4">
+          <a href="newUser.html" class="btn btn-dark add-user">Add User</a>
+          <input onkeyup="filtraTabella(event)" class="rounded-2 p-1 ps-2 searchbar" type="text" placeholder="Search" aria-label="Search" value="" id="searchBar">
+        </div>           
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="main-fetch.js"></script>
+
+</body>
+</html>     
