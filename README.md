@@ -9,4 +9,4 @@ I developed a CRUD (Create, Read, Update, Delete) web app that allows performing
 **Import the database:** Load the database file into your XAMPP environment using phpMyAdmin.\
 **Place the project:** Move the project folder into the `Xampp/htdocs` directory of Xampp.\
 **Start XAMPP:** Launch the Apache and MySQL services from the XAMPP control panel.\
-**Access the project:** Open your browser and enter the project URL to view it.\
+**Access the project:** Open your browser and enter the project URL to view it.
