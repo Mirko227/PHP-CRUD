@@ -1,4 +1,4 @@
-#PHP-CRUD 
+# PHP-CRUD 
 
 I developed a CRUD (Create, Read, Update, Delete) web app that allows performing the four fundamental operations on a relational database. Additionally, I implemented a pagination system without using external libraries, a filter for results, comprehensive error handling, and made the interface fully responsive.
 
